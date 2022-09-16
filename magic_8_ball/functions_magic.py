@@ -22,7 +22,7 @@ def make_request_to_magic_8_ball(url):
         print(f'The magic 8 ball is mysteriously unavailable because {e}')
 
 
-def extract_answer_from_response(response):
+def extract_answer_from_response(question, response):
     """
     The response is a dictionary in the form
 
@@ -36,6 +36,12 @@ def extract_answer_from_response(response):
 
     This function returns the answer value from the nested dictionary.
     """
+    {
+        'magic': {
+            'question': f'{question}', 
+            'answer': f'{response}', 
+        }
+    }
 
     # TODO what would happen if the response dictionary was not in the expected form?
     # TODO can you modify this function to print an error message, and return None

@@ -41,6 +41,7 @@ def extract_answer_from_response(question, response):
             'question': f'{question}', 
             'answer': f'{response}', 
         }
+        
     }
 
     # TODO what would happen if the response dictionary was not in the expected form?

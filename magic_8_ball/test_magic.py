@@ -27,4 +27,4 @@ class TestMagic8Ball(unittest.TestCase):
         return response
     
     def test_extract_answer_from_response(self,question, response):
-        
+        return 
